@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Hair Growth Tips</title>
+  <link rel="stylesheet" href="hair.css">
+</head>
+<body>
+  <header>
+    <h1>Hair Growth Tips</h1>
+    <nav>
+      <button onclick="showSection('men')">Men</button>
+      <button onclick="showSection('women')">Women</button>
+      <button onclick="showSection('children')">Children</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="men" class="tip-section">
+      <h2>Men</h2>
+      <p id="tip-men">Click below for a tip!</p>
+      <button onclick="showRandomTip('men')">Give Me a Tip</button>
+    </section>
+
+    <section id="women" class="tip-section" style="display:none;">
+      <h2>Women</h2>
+      <p id="tip-women">Click below for a tip!</p>
+      <button onclick="showRandomTip('women')">Give Me a Tip</button>
+    </section>
+
+    <section id="children" class="tip-section" style="display:none;">
+      <h2>Children</h2>
+      <p id="tip-children">Click below for a tip!</p>
+      <button onclick="showRandomTip('children')">Give Me a Tip</button>
+    </section>
+  </main>
+
+  <script src="growth.js"></script>
+</body>
+</html>
